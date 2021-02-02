@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="cadd0440-f62f-4922-b0c8-83a227db425e">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select*from customer]]>
+	</queryString>
+	<field name="idcustomer" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="namacustomer" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jeniskelamincustomer" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="notlpcustomer" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="alamat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="biayahutang" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="76">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="-35" width="595" height="111" backcolor="#FF9966" uuid="165766ed-1ed1-4446-9d81-c376a4c2965a"/>
+				<image>
+					<reportElement x="0" y="0" width="585" height="111" uuid="cd7d693b-eab5-414e-a0c3-7985e3434ddd"/>
+					<imageExpression><![CDATA["C:\\Users\\User\\Documents\\tirtaayu\\tirtaayu\\src\\gambar\\RF.jpg"]]></imageExpression>
+				</image>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="62">
+			<staticText>
+				<reportElement x="169" y="25" width="223" height="20" uuid="372206fb-6ac9-49b9-93c5-5e702e1d9691"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[	Laporan Data Customer]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="21">
+			<line>
+				<reportElement x="-20" y="20" width="595" height="1" forecolor="#666666" uuid="64745e05-9d2e-4f73-bb68-8d2032f4c53e"/>
+			</line>
+			<staticText>
+				<reportElement mode="Opaque" x="-20" y="1" width="97" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="a61c942f-c940-4625-ae05-1e2bf3f3b432"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID Customer]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="77" y="0" width="92" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="dc774d2d-947d-4f57-9ccc-794618e0944e"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="169" y="0" width="107" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="7c6d4754-f084-497a-88ef-96b6940f3c4e"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Gender]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="276" y="0" width="92" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="4e190338-edf8-472a-a428-a43a2c2274ec"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Telephone]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="368" y="0" width="92" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="9518d621-f55f-497c-91c0-7d6009e129d1"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[alamat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="460" y="0" width="115" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="6c7e7352-f0a3-44bc-8121-11fabf2c6bc9"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[biayahutang]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1" uuid="525cfeea-0074-4cc6-821b-9774c25ca433"/>
+			</line>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="-20" y="0" width="92" height="20" uuid="2933960f-1eea-4ddb-b85f-d7df1ffb865f"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{idcustomer}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="276" y="0" width="92" height="20" uuid="5c6d47d6-8c95-4ab5-9ac8-034ee2ed9200"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{notlpcustomer}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="381" y="0" width="92" height="20" uuid="55a101c5-6090-4aaa-8ecf-7f46de10cb3c"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{alamat}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="473" y="0" width="92" height="20" uuid="dce616eb-91fd-4dec-923d-328dad2de50b"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{biayahutang}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="77" y="0" width="92" height="20" uuid="d5a70331-ec49-4ea8-bc45-64d2ae1cd484"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{namacustomer}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="169" y="0" width="92" height="20" uuid="fe3bb8bb-fd66-45b7-8480-7fb0689fcaf6"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jeniskelamincustomer}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="178">
+			<textField>
+				<reportElement mode="Opaque" x="-20" y="165" width="515" height="13" backcolor="#E6E6E6" uuid="2e1ae590-7ac6-4361-8049-cedd8a33c7b9"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Hal "+$V{PAGE_NUMBER}+" dari"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement mode="Opaque" x="495" y="165" width="40" height="13" backcolor="#E6E6E6" uuid="e0cfd866-691a-4625-874c-092c9aa67563"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="358" y="34" width="34" height="20" uuid="4496243d-475f-4625-9336-7a908927b585"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Depok,]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="395" y="34" width="160" height="13" uuid="f3f2a26b-34f4-418f-8bb6-fc38fdf73b6f"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="401" y="125" width="100" height="20" uuid="2ec598f0-1bf0-43f5-8a8c-1a9ec29a69b4"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Supriyono]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="401" y="145" width="100" height="20" uuid="f3e53084-3f90-4f51-ba52-5fde3d78815b"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Owner]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>
